@@ -2,7 +2,7 @@ const giphys = document.getElementById('giphy');
 
 function getGiphy() {
   const request = new XMLHttpRequest();
-  request.open('GET', 'http://api.giphy.com/v1/gifs/search?q=programming&api_key=dc6zaTOxFJmzC&limit=6', true);
+  request.open('GET', 'https://api.giphy.com/v1/gifs/search?q=programming&api_key=dc6zaTOxFJmzC&limit=6', true);
 
   request.onload = () => {
     if (request.status >= 200 && request.status < 400) {
